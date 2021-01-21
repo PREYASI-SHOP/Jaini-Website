@@ -1,0 +1,844 @@
+ 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" 
+       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172445699-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-172445699-1');
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jaini Nandu - Sports Psychologist</title>
+    
+        <style>
+            
+      
+            html {
+        zoom: 85%;
+        -moz-transform: scale(1.7);
+        
+    }   
+        nav{
+            min-height: 105px;   
+        }
+    
+    
+        .section{
+                    padding-top : 6vw;
+                    padding-bottom: 6vw;
+                }
+                .tabs .indicator{
+              background-color: #1a237e;
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active{
+              background: orange-lighten-2;
+            }
+      #back{
+        background-image:url(img/background.jpg);
+        min-height: 300px;
+      }
+        #nav {
+        position:relative;
+        min-height: 109px;
+        padding: 0px 40px 25px 10px;
+        margin:0px 0px 0px 0px;
+    }
+     
+    ul#navigation {
+        margin:0px auto;
+        position:relative;
+        float:left;
+       
+    }
+     
+    ul#navigation li {
+        display:inline;
+        font-size: 15px;
+        font-weight:bold;
+        color: #283593;
+       
+        position:relative;
+        
+    }
+     
+    ul#navigation li a {
+        
+       
+        text-shadow:1px 1px 0px #fff;
+        text-decoration:none;
+        display:outside;
+        color: #283593;
+        padding: 15px 40px 25px 10px;
+     
+        -webkit-transition:color 0.2s linear, background 0.2s linear;
+        -moz-transition:color 0.2s linear, background 0.2s linear;
+        -o-transition:color 0.2s linear, background 0.2s linear;
+        transition:color 0.2s linear, background 0.2s linear;
+    }
+     
+    ul#navigation li a:hover {
+        background:#a3a1a1;
+        color:#282828;
+    }
+     
+    
+     
+    ul#navigation li:hover > a {
+        background:#fff;
+    }
+    
+    ul#navigation li:hover > ul
+    {
+    /*these 2 styles are very important,
+    being the ones which make the drop-down to appear on hover */
+        visibility:visible;
+        opacity:1;
+    }
+     
+    ul#navigation ul, ul#navigation ul li ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    /*the next 2 styles are very important,
+    being the ones which make the drop-down to stay hidden */
+    visibility:hidden;
+        opacity:0;
+        position: absolute;
+        z-index: 99999;
+        width:148%;
+        background:#f8f8f8;
+        
+    /* css3 transitions for smooth hover effect */
+        -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+        -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+        -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+        transition:opacity 0.2s linear, visibility 0.2s linear;
+    }
+     
+    ul#navigation ul {
+        top: 105px;
+        left: -46px;
+    }
+     
+    ul#navigation ul li ul {
+        top: 0;
+        left: 181px; /* strong related to width:180px; from above */
+    }
+     
+    ul#navigation ul li {
+        clear:both;
+        width:100%;
+        border:0 none;
+        
+    }
+     
+    ul#navigation ul li a {
+        background:none;
+        padding:7px 15px;
+        color: #283593;
+        text-shadow:1px 1px 0px #fff;
+        text-decoration:none;
+        display:inline-block;
+        
+        float:left;
+        clear:both;
+        width:100%;
+    }
+    
+    .accordion {
+      background-color: #e3f2fd;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: #ffffff;
+    }
+    
+    .accordion:after {
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }  
+    
+    .centers {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
+        #bigsection{
+            min-height: 630px;;
+        }
+        #smallsection{
+            max-height: 230px;
+        }
+    
+      
+        .slider .slides{
+            max-height: 230px;
+        }
+        
+    
+     
+       
+    * {box-sizing: border-box}
+    
+    
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      background: #ffffff;
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 20px 0px 0px 0px;
+      text-align: center;
+    }
+    
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 100px;
+      color: #000000;
+      font-weight: bold;
+      font-size: 70px;
+      border-radius: 3px 3px 3px 3px;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.2);
+      color: white;
+    }
+    
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        
+        text-align: center;
+        padding: 20px ;
+       
+        
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.2s ease;
+    }
+    
+    /* Add a background color to the active dot/circle */
+    .actives, .dot:hover {
+      background-color: #000000;
+    }
+    
+    
+        </style>
+    </head>
+    <body>
+    
+      <!-- navbar -->
+      
+      <nav id="nav" class=" nav-wrapper transparent hide-on-med-and-down" style="width: 100%;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html" class="brand-logo font responsive-img hide-on-small-only"><img style="width: 300px;" src="img/logo.jpg" ></a>
+            <a href="index.html" class="brand-logo font responsive-img hide-on-med-and-up "><img style="width: 250px;" src="img/logo.jpg" ></a>
+            
+            
+            <a href="" class="sidenav-trigger"data-target="mobile-menu" >
+                <i class="material-icons indigo-text" style="font-size:32px;">menu</i>
+            </a>
+            
+            <ul id="navigation" class="right hide-on-med-and-down" style="padding-right: 0px;">
+                <li><i class="material-icons indigo-text text-darken-3" style="font-size: 28px;padding-top: 20px;">home</i></li>
+                
+                  <li class="indigo-text text-darken-3"><a href="index.html">Home</a>
+                    
+                </li>
+                  <li><i class="material-icons indigo-text text-darken-3" style="font-size: 28px;padding-top: 20px;">info</i></li>
+                  
+                  <li>
+                    <a href="about.html" >About</a>
+                  </li>
+    
+                  <li><i class="material-icons indigo-text text-darken-3" style="font-size: 28px;padding-top: 20px;">build</i></li>
+                  
+                  <li>
+                    <a href="index.html#services" >Services</a>
+                   
+                  </li>
+    
+                  <li><i class="material-icons indigo-text text-darken-3" style="font-size: 28px;padding-top: 20px;">assignment_turned_in</i></li>
+                  
+    
+                  <li>
+                    <a href="booksession.html">Book Session</a>
+                  </li>
+    
+                  <li><i class="material-icons indigo-text text-darken-3" style="font-size: 28px;padding-top: 20px;">local_phone</i></li>
+                  
+    
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+    
+    
+                  <li><i class="material-icons indigo-text text-darken-3" style="font-size: 28px;padding-top: 20px;">question_answer</i></li>
+                  
+    
+                  <li>
+                  
+        
+                  <li>
+                    <a href="index.html#blog">Blogs</a>
+                  </li>
+                  <li><i class="fab fa-instagram" style="font-size: 23px;padding-top: 34px; color: #1a237e;"></i></li>
+                  
+        
+                  <li>
+                    <a href="index.html#social">Social Media</a>
+                  </li>
+                 
+                 
+                  
+    
+                  <BR> 
+                  
+            </ul>  
+            
+        
+    </nav>
+    
+        <nav class=" transparent hide-on-med-and-up">
+          <div class="container">
+              <a href="index.html" class="brand-logo font responsive-img hide-on-small-only"><img style="width: 300px;" src="img/logo.jpg" ></a>
+              <a href="index.html" class="brand-logo font responsive-img hide-on-med-and-up "><img style="width: 250px;" src="img/logo.jpg" ></a>
+              
+              
+              <a href="" class="sidenav-trigger"data-target="mobile-menu" >
+                  <i class="material-icons indigo-text" style="font-size:32px;">menu</i>
+              </a>
+    
+             
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+                
+                  
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booksession.html">Book Session</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="sociamedia.html">Social Media</a></li>
+            <li><a href="stories.html">Inspiring Stories</a></li>
+            
+        </ul>
+    
+    
+      </div>
+    </nav>
+    <nav class="indigo darken-3 hide-on-small-only" style="min-height:0px; padding-left:100px ;">
+        <div class="nav-wrapper" >
+          <div class="col s12">
+            <a href="index.html" class="breadcrumb">Home</a>
+            
+            <a href="stories.html" class="breadcrumb">Inspiring Stories</a>
+          </div>
+        </div>
+      </nav>
+    
+      <nav class="indigo darken-3 hide-on-med-and-up" style="min-height:0px; padding-left:30px ;">
+        <div class="nav-wrapper" >
+          <div class="col s12">
+            <a href="index.html" class="breadcrumb">Home</a>
+            
+            <a href="stories.html" class="breadcrumb">Inspiring Stories</a>
+          </div>
+        </div>
+      </nav>
+        
+      <img src="img/65.jpg"  class="hide-on-med-and-down" height="350px" width="100%" > 
+    
+      <img src="img/65.jpg"  class="hide-on-med-and-up"  height="100px"width="100%" >
+    
+    
+      <div class="hide-on-small-only" id="back">
+        
+      <BR>
+            
+        
+        
+        <h3 class="indigo-text center text-darken-3" style="font-family:Bahnschrift;">Inspiring stories of famous sports personalities </h3>
+        
+        
+        <BR>
+            <div class="container hide-on-med-and-down" >
+    
+                <img src="img/5.jpg" width="400"  style="float:left; padding-right: 60px;" class="responsive-img materialboxed">
+              
+              
+                  <h4 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">LeBron James</h4>
+            
+                  <h5 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">American basketball player</h5>
+                <BR>
+                <p class="indigo-text text-darken-3 scrollspy"  style="font-size: 17px;text-align: justify;font-family:Bahnschrift;">LeBron Raymone James Sr. is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Widely considered one of the greatest NBA players in history, James is the only player in NBA history to have won NBA championships with three franchises as Finals MVP. His accomplishments include four NBA championships, four NBA Most Valuable Player (MVP) Awards, four Finals MVP Awards, and two Olympic gold medals. During his 17-year career, James holds the record for all-time playoffs points, is third in all-time points, and eighth in career assists. James has been selected to the All-NBA First Team a record 13 times, made the All-Defensive First Team five times, and has played in 16 All-Star Games, in which he was selected All-Star MVP three times.</p>
+                    
+                    <BR>
+                    <a href="https://en.wikipedia.org/wiki/LeBron_James">
+                    <button class="indigo darken-3 btn waves-effect waves-light " type="submit" name="action">Read full Story
+                        
+                      <i class="material-icons right ">send</i>
+                      </button>
+                    </a>
+                </div>
+            <BR><BR><BR><BR><BR><BR>
+
+
+                <div class="container hide-on-med-and-down" >
+    
+                    <img src="img/6.jpg" width="400"  style="float:left; padding-right: 60px;" class="responsive-img materialboxed">
+                  
+                  
+                      <h4 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Tiger Woods</h4>
+                
+                      <h5 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">American professional golfer</h5>
+                    <BR>
+                    <p class="indigo-text text-darken-3 scrollspy"  style="font-size: 17px;text-align: justify;font-family:Bahnschrift;">Eldrick Tont "Tiger" Woods (born December 30, 1975) is an American professional golfer. He is tied for first in PGA Tour wins and ranks second in men's major championships and also holds numerous golf records. Woods is widely regarded as one of the greatest golfers, and one of the most famous athletes of all time. He will be inducted into the World Golf Hall of Fame in 2021.
+
+                        Following an outstanding junior, college, and amateur golf career, Woods turned professional in 1996 at the age of 20. By the end of April 1997, he had won three PGA Tour events in addition to his first major, the 1997 Masters, which he won by 12 strokes in a record-breaking performance. He reached number one in the world rankings for the first time in June 1997, less than a year after turning pro. Throughout the first decade of the 21st century, Woods was the dominant force in golf. He was the top-ranked golfer in the world from August 1999 to September 2004 (264 weeks) and again from June 2005 to October 2010 (281 weeks). During this time, he won 13 of golf's major championships.</p>
+                        
+                        <BR>
+                        <a href="https://en.wikipedia.org/wiki/Tiger_Woods">
+                        <button class="indigo darken-3 btn waves-effect waves-light " type="submit" name="action">Read full Story
+                            
+                          <i class="material-icons right ">send</i>
+                          </button>
+                        </a>
+                    </div>
+                <BR><BR><BR><BR><BR><BR>
+
+                    <div class="container hide-on-med-and-down" >
+    
+                        <img src="img/7.jpg" width="400"  style="float:left; padding-right: 60px;" class="responsive-img materialboxed">
+                      
+                      
+                          <h4 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Rafael Nadal</h4>
+                    
+                          <h5 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Spanish tennis player</h5>
+                        <BR>
+                        <p class="indigo-text text-darken-3 scrollspy"  style="font-size: 17px;text-align: justify;font-family:Bahnschrift;">Rafael "Rafa" Nadal Parera is a Spanish professional tennis player. He is ranked No. 2 in the world by the Association of Tennis Professionals (ATP), has been ranked No. 1 in the ATP rankings for 209 weeks, and has finished as the year-end No. 1 five times. Nadal has won 20 Grand Slam men's singles titles. His 13 French Open titles in particular are a record at any tournament. Nadal's dominance on clay is also highlighted by 60 of his 86 ATP singles titles coming on this surface, including 25 of his 35 ATP Masters 1000 titles, and his 81 consecutive wins on clay is the longest single-surface win streak in the Open Era.
+
+                            He was one of the most successful teenagers in ATP Tour history, reaching No. 2 in the world at age 19 and winning 16 titles, including his first French Open and six Masters events. He also won an Olympic gold medal in singles that year in Beijing, and then completed the career Grand Slam at the 2010 US Open in the only year where he won three majors. With his Olympic gold medal, he is also one of only two male players to complete the career Golden Slam.</p>
+                            
+                            <BR>
+                            <a href="https://en.wikipedia.org/wiki/Rafael_Nadal">
+                            <button class="indigo darken-3 btn waves-effect waves-light " type="submit" name="action">Read full Story
+                                
+                              <i class="material-icons right ">send</i>
+                              </button>
+                            </a>
+                        </div>
+                    <BR><BR><BR><BR><BR><BR>
+
+
+                        <div class="container hide-on-med-and-down" >
+    
+                            <img src="img/8.jpg" width="400"  style="float:left; padding-right: 60px;" class="responsive-img materialboxed">
+                          
+                          
+                              <h4 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Roger Federer</h4>
+                        
+                              <h5 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Swiss Tennis player</h5>
+                            <BR>
+                            <p class="indigo-text text-darken-3 scrollspy"  style="font-size: 17px;text-align: justify;font-family:Bahnschrift;">Roger Federer  is a Swiss professional tennis player. He has won 20 Grand Slam men's singles titles, an all-time record shared with Rafael Nadal. Federer has been No. 1 in the ATP rankings a record total of 310 weeks – including a record 237 consecutive weeks – and has finished as the year-end No. 1 five times. Federer has won 103 ATP singles titles and including a record six ATP Finals.
+
+                                Federer has played in an era where he dominated men's tennis together with Nadal and Novak Djokovic. A Wimbledon junior champion in 1998, Federer won his first Grand Slam singles title at Wimbledon in 2003 at age 21. In 2004, he established himself as the best player in men's tennis by winning three out of four major singles titles and the ATP Finals, a feat he repeated in both 2006 and 2007. Over a stretch from 2005 to 2010, Federer made 18 out of 19 major singles finals. He completed the career Grand Slam at the 2009 French Open after three previous runner-ups to Nadal.</p>
+                                
+                                <BR>
+                                <a href="https://en.wikipedia.org/wiki/Roger_Federer">
+                                <button class="indigo darken-3 btn waves-effect waves-light " type="submit" name="action">Read full Story
+                                    
+                                  <i class="material-icons right ">send</i>
+                                  </button>
+                                </a>
+                            </div>
+                        <BR><BR><BR><BR><BR><BR>
+
+
+
+                            <div class="container hide-on-med-and-down" >
+    
+                                <img src="img/9.jpg" width="400"  style="float:left; padding-right: 60px;" class="responsive-img materialboxed">
+                              
+                              
+                                  <h4 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Cristiano Ronaldo</h4>
+                            
+                                  <h5 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Portuguese footballer</h5>
+                                <BR>
+                                <p class="indigo-text text-darken-3 scrollspy"  style="font-size: 17px;text-align: justify;font-family:Bahnschrift;">Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards and four European Golden Shoes, both of which are records for a European player. He has won 30 major trophies in his career. Ronaldo holds the records for the most goals (134) and assists (41) in the history of the UEFA Champions League.He is one of the few recorded players to have made over 1,000 professional career appearances and has scored over 750 senior career goals for club and country. He is also the second male athlete to score 100 international goals, and the first European man to achieve the feat.</p>
+                                    
+                                    <BR>
+                                    <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">
+                                    <button class="indigo darken-3 btn waves-effect waves-light " type="submit" name="action">Read full Story
+                                        
+                                      <i class="material-icons right ">send</i>
+                                      </button>
+                                    </a>
+                                </div>
+                            <BR><BR><BR><BR><BR><BR>
+
+
+
+                                <div class="container hide-on-med-and-down" >
+    
+                                    <img src="img/10.jpg" width="400"  style="float:left; padding-right: 60px;" class="responsive-img materialboxed">
+                                  
+                                  
+                                      <h4 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Lionel Messi</h4>
+                                
+                                      <h5 class="indigo-text text-darken-3 scrollspy" style="font-family:Bahnschrift;">Argentine footballer</h5>
+                                    <BR>
+                                    <p class="indigo-text text-darken-3 scrollspy"  style="font-size: 17px;text-align: justify;font-family:Bahnschrift;">Lionel Andrés Messi is an Argentine professional footballer who plays as a forward and captains both the Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards and a record six European Golden Shoes. He has spent his entire professional career with Barcelona, where he has won a club-record 33 trophies, including ten La Liga titles, four UEFA Champions League titles and six Copas del Rey. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (455), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (185), a La Liga and European league season (21) and the Copa América (12). He has scored over 700 senior career goals for club and country.</p>
+                                        
+                                        <BR>
+                                        <a href="https://en.wikipedia.org/wiki/Lionel_Messi">
+                                        <button class="indigo darken-3 btn waves-effect waves-light " type="submit" name="action">Read full Story
+                                            
+                                          <i class="material-icons right ">send</i>
+                                          </button>
+                                        </a>
+                                    </div>
+                                <BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+
+
+
+
+
+
+     <div class="center" >
+            <a href="https://www.instagram.com/sportspsych_jaininandu/" class="fa fa-instagram" style="font-size:30px;color:red">&nbsp;&nbsp;&nbsp;Instagram</a>
+          
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.facebook.com/jaini.nandu.967" class="fa fa-facebook" style="font-size:30px;color:indigo">&nbsp;&nbsp;&nbsp;Facebook</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+      <a href="https://wa.me/8097111100" class="fa fa-whatsapp" style="font-size:30px;color:green">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/jaini-nandu-111a29136/?originalSubdomain=in" class="fa fa-linkedin" style="font-size:30px;color:">&nbsp;&nbsp;&nbsp;Linkedin</a>
+    </div>
+    <BR><BR>
+        <BR>
+    </div> 
+    
+     
+    <div class="container hide-on-med-and-up" >
+    
+    <Br>
+      <h3 class="indigo-text center text-darken-3" style="font-family:Bahnschrift;">Inspiring Stories</h3>
+        
+      
+      <div class="container center hide-on-med-and-up"  >
+        <div class="row">
+                   
+            
+            <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="img/5.jpg" alt="Card image cap" style="min-height: 220px;">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator indigo-text text-darken-3" style="font-weight: bold;font-family:Bahnschrift;">LeBron James</span>
+                  
+                    
+                        <a href="https://en.wikipedia.org/wiki/LeBron_James" class="btn indigo darken-3">Read</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">LeBron James<i class="material-icons right">close</i></span>
+                  <p style="text-align: justify ;">LeBron Raymone James Sr. is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Widely considered one of the greatest NBA players in history, James is the only player in NBA history to have won NBA championships with three franchises as Finals MVP. His accomplishments include four NBA championships, four NBA Most Valuable Player (MVP) Awards, four Finals MVP Awards, and two Olympic gold medals. During his 17-year career, James holds the record for all-time playoffs points, is third in all-time points, and eighth in career assists. James has been selected to the All-NBA First Team a record 13 times, made the All-Defensive First Team five times, and has played in 16 All-Star Games, in which he was selected All-Star MVP three times.</p>
+                </div>
+              </div>
+              <BR><BR> <BR>
+            </div>
+        
+            
+            
+    
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="img/6.jpg" alt="Card image cap" style="min-height: 220px;">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator indigo-text text-darken-3" style="font-weight: bold;font-family:Bahnschrift;">Tiger Woods</span>
+                      
+                        
+                            <a href="https://en.wikipedia.org/wiki/Tiger_Woods" class="btn indigo darken-3">Read</a>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Tiger Woods<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify ;">Eldrick Tont "Tiger" Woods (born December 30, 1975) is an American professional golfer. He is tied for first in PGA Tour wins and ranks second in men's major championships and also holds numerous golf records. Woods is widely regarded as one of the greatest golfers, and one of the most famous athletes of all time. He will be inducted into the World Golf Hall of Fame in 2021.
+
+                        Following an outstanding junior, college, and amateur golf career, Woods turned professional in 1996 at the age of 20. By the end of April 1997, he had won three PGA Tour events in addition to his first major, the 1997 Masters, which he won by 12 strokes in a record-breaking performance. He reached number one in the world rankings for the first time in June 1997, less than a year after turning pro. Throughout the first decade of the 21st century, Woods was the dominant force in golf. He was the top-ranked golfer in the world from August 1999 to September 2004 (264 weeks) and again from June 2005 to October 2010 (281 weeks). During this time, he won 13 of golf's major championships.</p>
+                    </div>
+                  </div>
+                  <BR><BR> <BR>
+                </div>
+        
+                <div class="col s12 m6 l3">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="img/7.jpg" alt="Card image cap" style="min-height: 220px;">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator indigo-text text-darken-3" style="font-weight: bold;font-family:Bahnschrift;">Rafael Nadal</span>
+                          
+                            
+                                <a href="https://en.wikipedia.org/wiki/Rafael_Nadal" class="btn indigo darken-3">Read</a>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Rafael Nadal<i class="material-icons right">close</i></span>
+                          <p style="text-align: justify ;">Rafael "Rafa" Nadal Parera is a Spanish professional tennis player. He is ranked No. 2 in the world by the Association of Tennis Professionals (ATP), has been ranked No. 1 in the ATP rankings for 209 weeks, and has finished as the year-end No. 1 five times. Nadal has won 20 Grand Slam men's singles titles. His 13 French Open titles in particular are a record at any tournament. Nadal's dominance on clay is also highlighted by 60 of his 86 ATP singles titles coming on this surface, including 25 of his 35 ATP Masters 1000 titles, and his 81 consecutive wins on clay is the longest single-surface win streak in the Open Era.
+
+                            He was one of the most successful teenagers in ATP Tour history, reaching No. 2 in the world at age 19 and winning 16 titles, including his first French Open and six Masters events. He also won an Olympic gold medal in singles that year in Beijing, and then completed the career Grand Slam at the 2010 US Open in the only year where he won three majors. With his Olympic gold medal, he is also one of only two male players to complete the career Golden Slam.</p>
+                        </div>
+                      </div>
+                      <BR><BR> <BR>
+                    </div>
+    
+                    <div class="col s12 m6 l3">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="img/8.jpg" alt="Card image cap" style="min-height: 220px;">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator indigo-text text-darken-3" style="font-weight: bold;font-family:Bahnschrift;">Roger Federer</span>
+                              
+                                
+                                    <a href="https://en.wikipedia.org/wiki/Roger_Federer" class="btn indigo darken-3">Read</a>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title grey-text text-darken-4">Roger Federer<i class="material-icons right">close</i></span>
+                              <p style="text-align: justify ;">Roger Federer  is a Swiss professional tennis player. He has won 20 Grand Slam men's singles titles, an all-time record shared with Rafael Nadal. Federer has been No. 1 in the ATP rankings a record total of 310 weeks – including a record 237 consecutive weeks – and has finished as the year-end No. 1 five times. Federer has won 103 ATP singles titles and including a record six ATP Finals.
+
+                                Federer has played in an era where he dominated men's tennis together with Nadal and Novak Djokovic. A Wimbledon junior champion in 1998, Federer won his first Grand Slam singles title at Wimbledon in 2003 at age 21. In 2004, he established himself as the best player in men's tennis by winning three out of four major singles titles and the ATP Finals, a feat he repeated in both 2006 and 2007. Over a stretch from 2005 to 2010, Federer made 18 out of 19 major singles finals. He completed the career Grand Slam at the 2009 French Open after three previous runner-ups to Nadal.</p>
+                            </div>
+                          </div>
+                          <BR><BR> <BR>
+                        </div>
+    
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                  <img class="activator" src="img/9.jpg" alt="Card image cap" style="min-height: 220px;">
+                                </div>
+                                <div class="card-content">
+                                  <span class="card-title activator indigo-text text-darken-3" style="font-weight: bold;font-family:Bahnschrift;">Cristiano Ronaldo</span>
+                                  
+                                    
+                                        <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo" class="btn indigo darken-3">Read</a>
+                                </div>
+                                <div class="card-reveal">
+                                  <span class="card-title grey-text text-darken-4">Cristiano Ronaldo<i class="material-icons right">close</i></span>
+                                  <p style="text-align: justify ;">Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captains the Portugal national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards and four European Golden Shoes, both of which are records for a European player. He has won 30 major trophies in his career. Ronaldo holds the records for the most goals (134) and assists (41) in the history of the UEFA Champions League.He is one of the few recorded players to have made over 1,000 professional career appearances and has scored over 750 senior career goals for club and country. He is also the second male athlete to score 100 international goals, and the first European man to achieve the feat.</p>
+                                </div>
+                              </div>
+                              <BR><BR> <BR>
+                            </div>
+                    
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                      <img class="activator" src="img/10.jpg" alt="Card image cap" style="min-height: 220px;">
+                                    </div>
+                                    <div class="card-content">
+                                      <span class="card-title activator indigo-text text-darken-3" style="font-weight: bold;font-family:Bahnschrift;">Lionel Messi</span>
+                                      
+                                        
+                                            <a href="https://en.wikipedia.org/wiki/Lionel_Messi" class="btn indigo darken-3">Read</a>
+                                    </div>
+                                    <div class="card-reveal">
+                                      <span class="card-title grey-text text-darken-4">Lionel Messi<i class="material-icons right">close</i></span>
+                                      <p style="text-align: justify ;">Lionel Andrés Messi is an Argentine professional footballer who plays as a forward and captains both the Spanish club Barcelona and the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards and a record six European Golden Shoes. He has spent his entire professional career with Barcelona, where he has won a club-record 33 trophies, including ten La Liga titles, four UEFA Champions League titles and six Copas del Rey. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (455), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (185), a La Liga and European league season (21) and the Copa América (12). He has scored over 700 senior career goals for club and country.</p>
+                                    </div>
+                                  </div>
+                                  <BR><BR> <BR>
+                                </div>
+                
+    
+    
+    </div>
+    
+    
+    </div>
+ 
+
+
+
+    
+    
+     <div class="hide-on-med-and-up" >
+       
+     
+      <BR>
+        <div class="center" >
+          <a href="https://www.instagram.com/sportspsych_jaininandu/" class="fa fa-instagram" style="font-size:30px;color:red">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+       
+    
+    <a href="https://www.facebook.com/jaini.nandu.967" class="fa fa-facebook" style="font-size:30px;color:indigo">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    
+    <a href="https://wa.me/8097111100" class="fa fa-whatsapp" style="font-size:30px;color:green">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.linkedin.com/in/jaini-nandu-111a29136/?originalSubdomain=in" class="fa fa-linkedin" style="font-size:30px;"></a>
+    </div>
+    
+    <BR><BR>
+    </div>
+    
+      
+     
+          <!-- footer -->
+          <footer class="page-footer grey darken-3 ">
+            <div class="container">
+                <div class="row">
+                  <div class="col s12 l6 scrollspy" id="contact">
+                      <h5>Contact </h5>
+                      
+                      <p>Address : Mumbai, Mahrashtra</p>
+                      
+                      <p>Contact Number : +91 8097111100</p>
+          
+      
+                      <p>Email : jaininandu13@gmail.com</p>
+      
+                      <p>Working Hours : Monday to Saturday - 10 am to 6pm </p>
+                  </div>
+                  <BR>
+                  <div class="col s12 l4 offset-l2 scrollspy" >
+                      <h5>Connect</h5>
+                      <ul>
+                          <li>
+                          <i class="fab fa-facebook "></i>
+                          <a href="https://www.facebook.com/jaini.nandu.967" class="grey-text text-lighten-3 ">&nbsp;&nbsp;Facebook</a>
+                          </li>
+                          <BR>
+                          <li>
+                          <i class="fab fa-instagram "></i>
+                          <a href="https://www.instagram.com/sportspsych_jaininandu/" class="grey-text text-lighten-3">&nbsp;&nbsp;Instagram</a>
+                          </li>
+                          <BR>
+                          <li>
+                          <i class="tiny material-icons prefix">email</i>
+                           <a href=mailto:jaininandu13@gmail.com class ="HTML link grey-text text-lighten-3">&nbsp;&nbsp;Email</a>
+                           </li>
+                           <BR>
+                            <li>
+                            <i class="fa fa-whatsapp"></i>
+                            <a href="https://wa.me/918097111100" class="grey-text text-lighten-3">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+                             </li>
+                             <BR>
+                              <li>
+                              <i class="fa fa-linkedin"></i>
+                              <a href="https://www.linkedin.com/in/jaini-nandu-111a29136/?originalSubdomain=in" class="grey-text text-lighten-3">&nbsp;&nbsp;&nbsp;Linkedin</a>
+                               </li>
+                           
+                      </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="footer-copyright grey-darken-4">
+                <div class="container center-align hide-on-med-and-down">&copy; 2021 Jaini Nandu - Sports and Performance Psychologist</div>
+                <div class="container center-align hide-on-med-and-up">&copy; 2021 Jaini Nandu </div>
+            </div>
+      
+        </footer>
+    
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('#mobile-menu').sidenav({ edge: 'left'});
+            $('#mobile-menu-right').sidenav({ edge: 'right'});
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+            disableWeekends : true
+                
+        });
+        $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition:500,
+        interval: 3000
+    });
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+        $(".tabs-content").css('width','1000px');
+        });
+        
+    
+      </script>
+    </body>
+    </html>
